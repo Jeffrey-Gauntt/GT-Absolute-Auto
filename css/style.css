@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --textColor: whitesmoke;
+    --backgroundColor: black;
+    --hoverBackground: grey;
+    --textBackgroundShade: rgba(0,0,0,0.6);
+    --linkColor: violet;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    min-height: 100%;
+}
+
+.link {
+    color: var(--linkColor);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    color: var(--textColor);
+    background-color: var(--backgroundColor);
+}
+
+.navbarItem {
+    padding: 2vh;
+    text-align: center;
+    margin: auto;
+}
+
+.navbarItem:hover {
+    color: black;
+    background-color: var(--hoverBackground);
+    cursor: pointer;
+}
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--textColor);
+    padding-top: 6vh;
+    /* border: blueviolet 2px solid; */
+}
+
+.sectionTitle {
+    text-align: center;
+    text-decoration: underline;
+    background-color: var(--textBackgroundShade);
+    /* border: yellow 2px solid; */
+    padding: 4vh 4vw;
+}
+
+.sectionContent {
+    background-color: var(--textBackgroundShade);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 1vh 1vw;
+}
+
+.sectionImg {
+    max-width: 100%;
+    margin: 1vh 0;
+}
+
+p {
+    padding: 2vh 0;
+}
+
+ul {
+    padding-left: 5vw;
+}
+
+#businessName {
+    background: url(../images/autoBackground.jpg) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 94vh;
+    padding-top: 0;
+}
+
+
+#services {
+    background: url(../images/services.jpg) no-repeat center center/cover;
+}
+
+#location {
+    background-color: var(--backgroundColor);
+}
+
+#contact {
+    background-color: var(--backgroundColor);
+}
+
+.phone {font-size: 8vh;}
+
+.contactComment {font-size: 5vh;}
+
+#history {
+    background: url(../images/history.jpg) no-repeat center center/cover;
+}
+
+.footer {
+    color: var(--textColor);
+    background-color: var(--backgroundColor);
+}
